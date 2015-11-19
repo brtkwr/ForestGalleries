@@ -1,0 +1,213 @@
+<table border="0" width="100%" cellspacing="1" cellpadding="0">
+	<tr>
+		<td>
+		<h3>Featuring: autumnal and christmas cards by Ansel Darrell</h3>
+		</td>
+	</tr>
+	<tr>
+		<td><i>25 September 2010</i></td>
+	</tr>
+	<tr>
+		<td>
+			<table border="0" width="100%" cellspacing="5" cellpadding="0">
+				<tr>
+					<td>The profits from these cards will help Ansel, a 16 year old Steiner student 
+					to become an apprentice at the Cal Earth Institute in California (<a href="http://www.calearth.org">www.calearth.org</a>). 
+					A non-profit/charitable foundation, Cal Earth specialises in long-term disaster 
+					relief solutions. Blending architecture and art, they aim to provide sustainable 
+					housing attainable by all.<p>You may order the cards below or call (+44)1751 
+					472327 - United Kingdom.<br>
+					All items are posted 1st class via Royal Mail and p&amp;p cost per pack of cards 
+					is £1.20.<br>
+					Payments are processed using PayPal.</p>
+					<p>5% of profits will also be donated to the current Cal Earth building 
+					project in Haiti. <br>
+					The cards are printed using vegetable-based inks on A6 front recycled cards (a natural matt texture) by
+					<a href="http://www.alocalprinter.com">www.alocalprinter.com</a>. The cards are
+					all left blank inside and carry a short message about Ansel and Cal Earth on the back.</p>
+					</td>
+					<td valign="bottom" bgcolor="#FFFFFF">
+					<img border="0" src="images/ansel.jpg" width="102" height="122"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+		<b>Christmas Cards</b></td>
+	</tr>
+	<tr>
+		<td>
+		<table border="0" cellspacing="1" cellpadding="0">
+			<tr>
+				<td>
+<?php
+$s = "christmascards";
+
+$photoDir = "gallery/".($s?($s."/"):"");
+
+if(!is_dir($photoDir)) die("Cuckoo! No $photoDir!");
+
+if ($handle = opendir($photoDir)) {
+while (false !== ($file = readdir($handle))) {
+	$fileArray[] = $file;
+}
+closedir($handle);
+
+for ($i=0; $i<count($fileArray); $i++){
+	if (file_exists ($photoDir."thumbs/".$fileArray[$i]) && !($fileArray[$i] == "." || $fileArray[$i] == "..")){
+		$photoArray[] = $fileArray[$i];
+?>
+<a href="<?=$photoDir.$fileArray[$i]?>" rel="lightbox<?=$s?("[".$s."]"):""?>" title="<?=$fileArray[$i]?>"><img src="<?=$photoDir."thumbs/".$fileArray[$i]?>" border="0"/></a>
+<?php
+	}
+}
+}
+?>
+				</td>
+				<td>
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="F7PDHTEBCTMBW">
+			<table>
+				<tr>
+					<td><input type="hidden" name="on0" value="Quantity">
+					Please select&nbsp; the quantity</td>
+				</tr>
+				<tr>
+					<td><select name="os0">
+					<option value="4 Christmas Cards">4 Christmas Cards £3.99
+					</option>
+					<option value="8 Christmas Cards">8 Christmas Cards £7.49
+					</option>
+					<option value="16 Christmas Cards">16 Christmas Cards £13.99
+					</option>
+					</select> </td>
+				</tr>
+			</table>
+			<input type="hidden" name="currency_code" value="GBP">
+			<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+			<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+		</form>					
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td><b>Autumnal Cards</b></td>
+	</tr>
+	<tr>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+<table border="0" cellspacing="1" cellpadding="0">
+<tr>
+	<td>
+<?php
+$s = "autumncards";
+
+$photoDir = "gallery/".($s?($s."/"):"");
+
+if(!is_dir($photoDir)) die("Cuckoo! No $photoDir!");
+
+if ($handle = opendir($photoDir)) {
+while (false !== ($file = readdir($handle))) {
+	$fileArray[] = $file;
+}
+closedir($handle);
+
+for ($i=0; $i<count($fileArray); $i++){
+	if (file_exists ($photoDir."thumbs/".$fileArray[$i]) && !($fileArray[$i] == "." || $fileArray[$i] == "..")){
+		$photoArray[] = $fileArray[$i];
+?>
+<a href="<?=$photoDir.$fileArray[$i]?>" rel="lightbox<?=$s?("[".$s."]"):""?>" title="<?=$fileArray[$i]?>"><img src="<?=$photoDir."thumbs/".$fileArray[$i]?>" border="0"/></a>
+<?php
+	}
+}
+}
+?>
+	</td>
+	<td>
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="ZB9VTYUHEUWL2">
+			<table>
+				<tr>
+					<td><input type="hidden" name="on0" value="Quantity">
+					Please select the quantity</td>
+				</tr>
+				<tr>
+					<td><select name="os0">
+					<option value="4 Autumnal Cards">4 Autumnal Cards £3.99
+					</option>
+					<option value="8 Autumnal Cards">8 Autumnal Cards £7.49
+					</option>
+					<option value="16 Autumnal Cards">16 Autumnal Cards £13.99
+					</option>
+					</select> </td>
+				</tr>
+			</table>
+			<input type="hidden" name="currency_code" value="GBP">
+			<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+			<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+		</form>		
+	</td>
+</tr>
+</table>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#522922">
+		<b>We also offer a mix of Autumnal and Christmas cards.</b></td>
+	</tr>
+	<tr>
+		<td align="center">
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="YQN4S8CTKABJJ">
+			<table>
+				<tr>
+					<td><input type="hidden" name="on0" value="Quantity">
+					<p align="center">Please select the quantity</td>
+				</tr>
+				<tr>
+					<td><select name="os0">
+					<option value="4 Autumnal and 4 Christmas Cards">4 Autumnal 
+					and 4 Christmas Cards £7.49</option>
+					<option value="8 Autumnal and 8 Christmas Cards">8 Autumnal 
+					and 8 Christmas Cards £13.99</option>
+					<option value="16 Autumnal and 16 Christmas Cards">16 Autumnal 
+					and 16 Christmas Cards £24.99</option>
+					</select> </td>
+				</tr>
+			</table>
+			<input type="hidden" name="currency_code" value="GBP">
+			<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+			<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+		</form>
+		</td>
+	</tr>
+</table>
